@@ -1,9 +1,6 @@
-import dotenv from "dotenv";
+import "dotenv/config"; // 🔥 This loads your .env variables instantly before anything else!
 import app from "./app.js";
 import connectDB from "./config/db.js";
-
-// Load environment variables
-dotenv.config();
 
 // Connect to MongoDB
 connectDB();
